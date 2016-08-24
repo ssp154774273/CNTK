@@ -38,7 +38,7 @@ if [[ ! -d $TEST_DATA_DIR || ! -e $TEST_DATA_DIR/cifar-10-batches-py ]]; then
 fi
 
 # cntkrun <CNTK config file name> <additional CNTK args>
-# setting thye DataDir to the run dir, since the cntk config expects data and ampping files in '$dataDir$/cifar-10-batches-py/'
+# setting the DataDir to the run dir, since the cntk config expects data and mapping files in '$dataDir$/cifar-10-batches-py/'
 DataDir=$TEST_RUN_DIR
 echo 'Starting cntk run'
 cntkrun 06_RegressionSimple.cntk "[command=TrainConvNet:Test] stderr=-"

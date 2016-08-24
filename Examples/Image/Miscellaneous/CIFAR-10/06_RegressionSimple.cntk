@@ -106,7 +106,7 @@ Write = {
     }
 }
 
-# Write action
+# Test action
 Test = {
     action = "test"
     minibatchSize = 512
